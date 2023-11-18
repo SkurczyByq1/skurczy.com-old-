@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&family=Roboto:wght@400;700&display=swap');
 
 body {
-    background: url(images/background.png);
-    background-attachment: fixed;
+    background: linear-gradient(#5d0f12, #922323, #5d0f12);
+    background-attachment: local;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -135,6 +135,65 @@ button:hover {
 
 
 
+.projects-section {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-content {
+    width: 420px;
+    height: 320px;
+    margin: 0 121px 0;
+}
+
+.projects-section-icon {
+    font-family: 'Roboto', sans-serif;
+    font-size: 307px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25);
+    margin: 0 95px 0
+}
+
+.projects-section .section-description p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 400;
+    text-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25);
+}
+
+.projects-content .section-title {
+    margin: 0 0 17px;
+}
+
+.projects-content .underline {
+    margin: 17px 0 9px;
+}
+
+#projects-button {
+    margin: 55px 0 0;
+}
+
+.projects-button-icon {
+    font-family: "Roboto", sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+    text-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25);
+}
+
+#projects-button:hover .projects-button-icon {
+    color: #FFFFFF;
+    -webkit-animation: white-glow 1s ease-in-out infinite alternate;
+    -moz-animation: white-glow 1s ease-in-out infinite alternate;
+    animation: white-glow 1s ease-in-out infinite alternate;
+}
+
+
+
 /* github */
 
 .github-section {
@@ -251,7 +310,6 @@ button:hover {
 footer {
     width: 100%;
     height: 256px;
-    background-color: #22272E;
     display: flex;
     justify-content: center;
     align-items: center;
