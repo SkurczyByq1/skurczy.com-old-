@@ -109,6 +109,8 @@ button:hover {
     justify-content: center;
     align-items: center;
     background: rgba(34, 39, 46, 0.5);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
 }
 
 #navbar-logo {
@@ -131,6 +133,12 @@ button:hover {
     -webkit-text-stroke-width: 1px;
     text-shadow: 0 0 60px #FF0000;
     animation: none;
+}
+
+.navbar-border {
+    width: 100%;
+    height: 1px;
+    background: rgba(125, 125, 125, 0.5);
 }
 
 
@@ -201,7 +209,7 @@ button:hover {
 .github-section {
     width: 100%;
     height: 640px;
-    background-image: url(images/github-background.svg);
+    background: linear-gradient(rgba(28, 33, 40, 0.3), rgba(28, 33, 40, 0.3)), url(images/github-background.svg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -258,7 +266,7 @@ button:hover {
 .discord-section {
     width: 100%;
     height: 640px;
-    background: url(images/discord-background.png);
+    background: linear-gradient(rgba(28, 33, 40, 0.3), rgba(28, 33, 40, 0.3)), url(images/discord-background.png);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -390,6 +398,8 @@ footer {
         filter: drop-shadow(0 0 20px #FFFFFF);
     }
 }
+
+
 
 ::-webkit-scrollbar {
     width: 12px;
