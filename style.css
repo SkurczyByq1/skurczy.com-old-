@@ -408,14 +408,44 @@ footer {
     }
 }
 
-.waves {
-    width: 100%;
-    height: 200px;
-    position: absolute;
-    margin: 696px 0px -2px;
+@-webkit-keyframes first-wave {
+    0% {
+        background-position-x: 0px;
+    }
+
+    50% {
+        background-position-x: 100%;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
 }
 
+.projects-waves {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    margin: 449px 0px -2px;
+}
 
+.projects-waves .first-wave {
+    width: 100%;
+    height: 500px;
+    background: url(images/first_wave.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    animation: first-wave 60s linear infinite;
+}
+
+.projects-waves .second-wave {
+    width: 100%;
+    height: 500px;
+    background: url(images/second_wave.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    animation: first-wave 60s linear infinite;
+}
 
 
 ::-webkit-scrollbar {
