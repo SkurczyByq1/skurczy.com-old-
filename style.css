@@ -408,6 +408,14 @@ footer {
     }
 }
 
+.waves {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    margin: 696px 0px -2px;
+}
+
+
 
 
 ::-webkit-scrollbar {
