@@ -474,3 +474,42 @@ footer {
 .projects-footer {
     background: #22272E;
 }
+
+.skurczycom-project {
+    width: 360px;
+    height: 480px;
+    background-color: #22272E;
+    border-color: rgba(125, 125, 125, 0.5);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 32px;
+}
+
+.skurczycom-project h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.card-content h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.card-description p {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.card-underline {
+    height: 6px;
+    width: 42px;
+    background-color: #FFFFFF;
+    border-radius: 64px;
+    box-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25);
+}
