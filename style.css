@@ -25,7 +25,7 @@ button {
     border-color: #BE3144;
     border-style: none;
     box-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25);
-    transition: all 0.3s ease-in-out 0s;
+    transition: 0.3s;
 }
 
 button:hover .button-text {
@@ -132,7 +132,7 @@ button:hover {
     color: #FFFFFF;
     -webkit-text-stroke-color: #FF0000;
     -webkit-text-stroke-width: 0;
-    transition: all 0.5s ease-in-out 0s;
+    transition: 0.3s;
 }
 
 #navbar-logo p:hover {
@@ -336,12 +336,13 @@ footer {
     color: #FFFFFF;
     text-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25);
     margin: 0 96px 0;
+    transition: 0.3s;
+    -webkit-text-stroke-color: #FF0000;
+    -webkit-text-stroke-width: 0;
 }
 
 #footer-logo p:hover {
     cursor: pointer;
-    cursor: pointer;
-    -webkit-text-stroke-color: #FF0000;
     -webkit-text-stroke-width: 1px;
     text-shadow: 0 0 60px #FF0000;
 }
@@ -390,78 +391,7 @@ footer {
 
 
 
-@-webkit-keyframes white-glow {
-    from {
-        text-shadow: 0;
-    }
-    to {
-        text-shadow: 0 0 40px #FFFFFF;
-    }
-}
-
-@-webkit-keyframes white-glow-svg {
-    from {
-        filter: drop-shadow(0);
-    }
-    to {
-        filter: drop-shadow(0 0 20px #FFFFFF);
-    }
-}
-
-@-webkit-keyframes first-wave {
-    0% {
-        background-position-x: 0px;
-    }
-
-    50% {
-        background-position-x: 100%;
-    }
-
-    100% {
-        background-position-x: 0px;
-    }
-}
-
-.projects-waves {
-    width: 100%;
-    height: 400px;
-    position: absolute;
-    margin: 449px 0px -2px;
-}
-
-.projects-waves .first-wave {
-    width: 100%;
-    height: 500px;
-    background: url(images/first_wave.svg);
-    position: absolute;
-    background-repeat: no-repeat;
-    animation: first-wave 60s linear infinite;
-}
-
-.projects-waves .second-wave {
-    width: 100%;
-    height: 500px;
-    background: url(images/second_wave.svg);
-    position: absolute;
-    background-repeat: no-repeat;
-    animation: first-wave 60s linear infinite;
-}
-
-
-::-webkit-scrollbar {
-    width: 12px;
-    background: #373e47;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #22272E;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: #1c2128;
-}
-
-
+/* projects site */
 
 .projects {
     width: 100%;
@@ -477,9 +407,9 @@ footer {
 
 
 
-/* CARDS */
+/* cards */
 
-.skurczycom-project {
+.card {
     width: 360px;
     height: 480px;
     background-color: #22272E;
@@ -489,18 +419,15 @@ footer {
     border-radius: 32px;
     padding: 36px 88px 36px 24px;
     margin: 0 64px 0;
+    transition: 0.5s;
+    box-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25);
 }
 
-.rc-car-project {
-    width: 360px;
-    height: 480px;
-    background-color: #22272E;
-    border-color: rgba(125, 125, 125, 0.5);
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 32px;
-    padding: 36px 88px 36px 24px;
-    margin: 0 64px 0;
+.card:hover {
+    transform: translateY(-20px);
+    -webkit-animation: red-glow 1s ease-in-out infinite alternate;
+    -moz-animation: red-glow 1s ease-in-out infinite alternate;
+    animation: red-glow 1s ease-in-out infinite alternate;
 }
 
 .card-content h1 {
@@ -586,4 +513,52 @@ footer {
     -webkit-animation: white-glow 1s ease-in-out infinite alternate;
     -moz-animation: white-glow 1s ease-in-out infinite alternate;
     animation: white-glow 1s ease-in-out infinite alternate;
+}
+
+
+
+/* webkit keyframes */
+
+@-webkit-keyframes white-glow {
+    from {
+        text-shadow: 0;
+    }
+    to {
+        text-shadow: 0 0 40px #FFFFFF;
+    }
+}
+
+@-webkit-keyframes white-glow-svg {
+    from {
+        filter: drop-shadow(0);
+    }
+    to {
+        filter: drop-shadow(0 0 20px #FFFFFF);
+    }
+}
+
+@-webkit-keyframes red-glow {
+    from {
+        box-shadow: 0 0 60px #FF0000;
+    }
+    to {
+        box-shadow: 0 0 20px #BE3144;
+    }
+}
+
+
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 12px;
+    background: #373e47;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #22272E;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #1c2128;
 }
