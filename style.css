@@ -578,6 +578,18 @@ footer {
 
 
 
+/* website project */
+
+.website-project-body {
+    background: #22272E;
+}
+
+.website-project {
+    height: 900px;
+    width: 100%;
+}
+
+
 /*.social-media {
     width: 100%;
     height: 900px;

@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
         projectspage: 'projects.html',
         github: 'https://github.com/SkurczyByq1',
         discord: null,
-        website: 'projects/skurczy.com.html',
-        rccar: 'projects/rc-car.html'
+        website: 'website-project.html',
+        rccar: 'rc-car.html'
     }
 
     button.home.addEventListener('click', function() {
@@ -34,11 +34,11 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 
     button.website.addEventListener('click', function() {
-        window.open(link.website);
+        window.location.href = link.website;
     })
 
     button.rccar.addEventListener('click', function() {
-        window.open(link.rccar)
+        window.location.href = link.rccar;
     })
 })
 
