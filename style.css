@@ -391,7 +391,7 @@ footer {
 }
 
 
-.homepage-footer {
+.alternative-footer {
     background: none;
 }
 
@@ -578,17 +578,60 @@ footer {
 
 
 
-/* website project */
-
-.website-project-body {
-    background: #22272E;
+#back-to-previous {
+    width:  fit-content;
+    height: fit-content;
 }
+
+/* website project */
 
 .website-project {
     height: 900px;
     width: 100%;
+    background: #22272E;
 }
 
+
+
+/* rccar project*/
+
+.rccar-project {
+    height: 900px;
+    width: 100%;
+    background: #22272E;
+    display: flex;
+    justify-content: center;
+    padding: 96px 0 0;
+
+}
+
+.rccar-project h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 256px;
+    color: #FFFFFF;
+}
+
+.rccar-project h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    color: #FFFFFF;
+}
+
+.rccar-project p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.rccar-project .project-content {
+    width: fit-content;
+    height: fit-content;
+    margin: 0px 0px 0px;
+}
+
+.arrow {
+    font-family: 'Segoe UI Symbol', arial, sans-serif;
+}
 
 /*.social-media {
     width: 100%;
