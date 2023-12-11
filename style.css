@@ -15,6 +15,17 @@ body {
     /*transition: all 1s cubic-bezier(0, 0, 0.2, 1) 0s;*/
 }
 
+a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 button {
     width: 200px;
     height: 64px;
@@ -379,18 +390,6 @@ footer {
     margin: 12px 0 0 0;
 }
 
-.footer-content-link a {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-.footer-content-link a:hover {
-    text-decoration: underline;
-}
-
-
 .alternative-footer {
     background: none;
 }
@@ -581,6 +580,13 @@ footer {
 #back-to-previous {
     width:  fit-content;
     height: fit-content;
+    position: absolute;
+    margin: 96px 0 0 128px;
+}
+
+
+.arrow {
+    font-family: 'Segoe UI Symbol', arial, sans-serif;
 }
 
 /* website project */
@@ -599,10 +605,6 @@ footer {
     height: 900px;
     width: 100%;
     background: #22272E;
-    display: flex;
-    justify-content: center;
-    padding: 96px 0 0;
-
 }
 
 .rccar-project h1 {
@@ -617,21 +619,17 @@ footer {
     color: #FFFFFF;
 }
 
-.rccar-project p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color: #FFFFFF;
-}
-
 .rccar-project .project-content {
     width: fit-content;
     height: fit-content;
-    margin: 0px 0px 0px;
+    margin: 0 auto;
+    transform: translateY(200px);
 }
 
-.arrow {
-    font-family: 'Segoe UI Symbol', arial, sans-serif;
+.rccar-project .project-content:hover {
+    cursor: default;
 }
+
 
 /*.social-media {
     width: 100%;
@@ -686,6 +684,7 @@ footer {
 
 ::-webkit-scrollbar-thumb {
     background-color: #22272E;
+    border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
