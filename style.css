@@ -7,6 +7,13 @@ body {
     background-size: cover;
 }
 
+.project-page-body {
+    background: linear-gradient(#22272E, #5d0f12, #922323, #5d0f12);
+    background-attachment: local;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -24,6 +31,10 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.bold-text {
+    font-weight: 700;
 }
 
 button {
@@ -532,8 +543,6 @@ footer {
     height: 360px;
     border-radius: 50%;
     box-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25);
-    -webkit-animation: levitating 3s ease-in-out infinite alternate;
-    -moz-animation: levitating 3s ease-in-out infinite alternate;
     animation: levitating 3s ease-in-out infinite alternate;
     margin: 0 95px 0
 }
@@ -597,6 +606,25 @@ footer {
     background: #22272E;
 }
 
+.website-project .project-content {
+    width: 440px;
+    height: 491px;
+}
+
+.website-project h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    color: #FFFFFF;
+}
+
+.website-project p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
 
 
 /* rccar project*/
@@ -623,7 +651,7 @@ footer {
     width: fit-content;
     height: fit-content;
     margin: 0 auto;
-    transform: translateY(200px);
+    animation: error-levitating 3s ease-in-out infinite alternate;
 }
 
 .rccar-project .project-content:hover {
@@ -671,6 +699,15 @@ footer {
     }
     to {
         transform: translateY(10px);
+    }
+}
+
+@-webkit-keyframes error-levitating {
+    from {
+        transform: translateY(180px);
+    }
+    to {
+        transform: translateY(210px);
     }
 }
 
