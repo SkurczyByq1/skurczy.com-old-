@@ -606,9 +606,32 @@ footer {
     background: #22272E;
 }
 
+
+
 .website-project .project-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-images {
+    margin: 0 0 -90px;
+}
+
+.project-images img {
+    width: 320px;
+    height: 160px;
+    display: grid;
+    border-radius: 32px;
+    margin: 0 120px 24px;
+}
+
+.project-text {
     width: 440px;
     height: 491px;
+    margin: 0 120px 0;
 }
 
 .website-project h1 {
@@ -616,6 +639,15 @@ footer {
     font-weight: 700;
     font-size: 64px;
     color: #FFFFFF;
+    margin: 0 0 9px;
+}
+
+.project-content .underline {
+    margin: 9px 0 9px;
+}
+
+.dev-time {
+    margin: 9px 0 24px;
 }
 
 .website-project p {
