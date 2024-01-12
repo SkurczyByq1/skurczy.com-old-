@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
         github: document.getElementById('github-button'),
         discord: document.getElementById('discord-button'),
         website: document.getElementById('website-card-button'),
-        rccar: document.getElementById('rc-car-card-button')
+        hurricane: document.getElementById('hurricane-card-button')
     }
 
     let link = {
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         github: 'https://github.com/SkurczyByq1',
         discord: null,
         website: 'website-project.html',
-        rccar: 'rc-car.html'
+        hurricane: 'hurricane.html'
     }
 
     button.home.addEventListener('click', function() {
@@ -37,24 +37,10 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = link.website;
     })
 
-    button.rccar.addEventListener('click', function() {
-        window.location.href = link.rccar;
+    button.hurricane.addEventListener('click', function() {
+        window.location.href = link.hurricane;
     })
 })
 
 
-console.log('░░░░░▄▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▄░░░░░░░░');
-console.log('░░░░░█░░░░▒▒▒▒▒▒▒▒▒▒▒▒░░▀▀▄░░░░');
-console.log('░░░░█░░░▒▒▒▒▒▒░░░░░░░░▒▒▒░░█░░░');
-console.log('░░░█░░░░░░▄██▀▄▄░░░░░▄▄▄░░░░█░░');
-console.log('░▄▀▒▄▄▄▒░█▀▀▀▀▄▄█░░░██▄▄█░░░░█░');
-console.log('█░▒█▒▄░▀▄▄▄▀░░░░░░░░█░░░▒▒▒▒▒░█');
-console.log('█░▒█░█▀▄▄░░░░░█▀░░░░▀▄░░▄▀▀▀▄▒█');
-console.log('░█░▀▄░█▄░█▀▄▄░▀░▀▀░▄▄▀░░░░█░░█░');
-console.log('░░█░░░▀▄▀█▄▄░█▀▀▀▄▄▄▄▀▀█▀██░█░░');
-console.log('░░░█░░░░██░░▀█▄▄▄█▄▄█▄████░█░░░');
-console.log('░░░░█░░░░▀▀▄░█░░░█░█▀██████░█░░');
-console.log('░░░░░▀▄░░░░░▀▀▄▄▄█▄█▄█▄█▄▀░░█░░');
-console.log('░░░░░░░▀▄▄░▒▒▒▒░░░░░░░░░░▒░░░█░');
-console.log('░░░░░░░░░░▀▀▄▄░▒▒▒▒▒▒▒▒▒▒░░░░█░');
-console.log('░░░░░░░░░░░░░░▀▄▄▄▄▄░░░░░░░░█░░');
+console.log('Website version: Beta 0.1');
