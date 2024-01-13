@@ -42,5 +42,4 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 })
 
-
 console.log('Website version: Beta 0.1');
