@@ -120,6 +120,31 @@ button:hover {
     background: rgba(125, 125, 125, 0.5);
 }
 
+.first-wave {
+    width: 100%;
+    height: 324px;
+    background: url(images/wave1.svg);
+    animation: waves 120s linear infinite;
+    z-index: -1;
+    opacity: 1;
+    position: absolute;
+    bottom: -32px;
+    left: 0;
+}
+
+.second-wave {
+    width: 100%;
+    height: 324px;
+    background: url(images/wave2.svg);
+    animation: waves 20s linear infinite;
+    z-index: -1;
+    opacity: 1;
+    position: absolute;
+    bottom: -32px;
+    left: 0;
+}
+
+
 
 /*navbar*/
 
@@ -223,30 +248,6 @@ button:hover {
     -webkit-animation: white-glow 1s ease-in-out infinite alternate;
     -moz-animation: white-glow 1s ease-in-out infinite alternate;
     animation: white-glow 1s ease-in-out infinite alternate;
-}
-
-.first-wave {
-    width: 100%;
-    height: 324px;
-    background: url(images/wave1.svg);
-    animation: waves 120s linear infinite;
-    z-index: 1000;
-    opacity: 1;
-    position: absolute;
-    bottom: -32px;
-    left: 0;
-}
-
-.second-wave {
-    width: 100%;
-    height: 324px;
-    background: url(images/wave2.svg);
-    animation: waves 20s linear infinite;
-    z-index: 1000;
-    opacity: 1;
-    position: absolute;
-    bottom: -32px;
-    left: 0;
 }
 
 
@@ -374,7 +375,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #22272E;
+    background: none;
+    position: relative;
 }
 
 #footer-logo p {
@@ -426,7 +428,22 @@ footer {
 }
 
 .alternative-footer {
-    background: none;
+    width: 100%;
+    height: 256px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #22272E;
+}
+
+footer .first-wave{
+    height: 256px;
+    margin: 0px 0px 32px;
+}
+
+footer .second-wave{
+    height: 256px;
+    margin: 0px 0px 32px;
 }
 
 
@@ -625,7 +642,7 @@ footer {
 /* website project */
 
 .website-project {
-    height: 900px;
+    height: 980px;
     width: 100%;
     background: #22272E;
 }
@@ -685,32 +702,32 @@ footer {
 
 /* rccar project*/
 
-.rccar-project {
-    height: 900px;
+.hurricane-project {
+    height: 980px;
     width: 100%;
     background: #22272E;
 }
 
-.rccar-project h1 {
+.hurricane-project h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 256px;
     color: #FFFFFF;
 }
 
-.rccar-project h2 {
+.hurricane-project h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 64px;
     color: #FFFFFF;
 }
 
-.rccar-project .project-content {
+.hurricane-project .project-content {
     width: fit-content;
     height: fit-content;
     margin: 0 auto;
     animation: error-levitating 3s ease-in-out infinite alternate;
 }
 
-.rccar-project .project-content:hover {
+.hurricane-project .project-content:hover {
     cursor: default;
 }
 
