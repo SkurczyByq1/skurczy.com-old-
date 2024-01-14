@@ -4,21 +4,23 @@ document.addEventListener('DOMContentLoaded', function() {
         projects: document.getElementById('projects-button'),
         github: document.getElementById('github-button'),
         discord: document.getElementById('discord-button'),
-        website: document.getElementById('website-card-button'),
-        hurricane: document.getElementById('hurricane-card-button')
+        mywebsite: document.getElementById('website-card-button')
     }
 
     let link = {
         homepage: 'index.html',
         projectspage: 'projects.html',
         github: 'https://github.com/SkurczyByq1',
-        discord: null,
-        website: 'website-project.html',
-        hurricane: 'hurricane.html'
+        discord: 'index.html',
+        mywebsite: 'website-project.html'
     }
 
     button.home.addEventListener('click', function() {
         window.location.href = link.homepage;
+    })
+
+    button.mywebsite.addEventListener('click', function() {
+        window.location.href = link.mywebsite
     })
 
     button.projects.addEventListener('click', function() {
@@ -31,14 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     button.discord.addEventListener('click', function() {
         window.open(link.discord);
-    })
-
-    button.website.addEventListener('click', function() {
-        window.location.href = link.website;
-    })
-
-    button.hurricane.addEventListener('click', function() {
-        window.location.href = link.hurricane;
     })
 })
 
