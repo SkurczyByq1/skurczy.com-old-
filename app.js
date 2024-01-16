@@ -36,4 +36,4 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 })
 
-console.log('Website version: Beta 0.1');
+console.log('Website version: Beta 1.0');
