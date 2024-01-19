@@ -15,11 +15,15 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = links.projects;
     })
 
+    buttons.about.addEventListener('click', function() {
+        window.location.href = links.about;
+    })
+
     buttons.github.addEventListener('click', function() {
-        window.location.href = links.github;
+        window.open(links.github);
     })
 
     buttons.discord.addEventListener('click', function() {
-        window.location.href = links.discord;
+        window.open(links.discord);
     })
 })
