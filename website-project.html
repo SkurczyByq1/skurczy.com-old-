@@ -1,43 +1,46 @@
 <!DOCTYPE html>
-<html lang = 'en'>
+<html>
     <head>
-        <meta name = 'Description' content = 'Skurczy'>
+        <meta name = 'Description' content = 'SKURCZY'>
         <meta charset = 'utf-8'>
-        <title>Skurczy - Website project</title>
+        <title>SKURCZY</title>
         <link rel = 'stylesheet' href = 'style.css'>
     </head>
     <body>
-
-        <section class = 'website-project'>
-            
-            <navbar class = 'navbar'>
-                <div class = 'navbar-container'>
-                    <div id = 'navbar-logo'>
-                        <p class = 'logo'>SKURCZY</p>
-                    </div>
-                </div>
-                <div class = 'section-border'></div>
-            </navbar>
-
-            <div id = 'back-to-previous'>
-                <a href = 'projects.html'><span class = 'arrow'>↩</span> Back to previous page</a>
-            </div>
-            <div class = 'project-content'>
-                <div class = 'project-images'>
-                    <img src = ''/>
-                    <img src = ''/>
-                    <img src = ''/>
-                </div>
-                <div class = 'project-text'>
-                    <h1>SKURCZY.COM</h1>
-                    <div class = 'underline'></div>
-                    <p class = 'dev-time'><span class = 'bold-text'>Development time: ~2 months</span></p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus aenean vel elit scelerisque mauris. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Justo donec enim diam vulputate ut. Consectetur libero id faucibus nisl tincidunt eget nullam non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus aenean vel elit scelerisque mauris. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Justo donec enim diam vulputate ut. Consectetur libero id faucibus nisl tincidunt eget nullam non nisi.</p>
+        <navbar class = 'navbar'>
+            <div class = 'navbar-container'>
+                <div id = 'navbar-logo'>
+                    <p class = 'logo'>SKURCZY</p>
                 </div>
             </div>
+            <div class = 'section-border'></div>
+        </navbar>
+
+        <section class = 'project-info'>
+            <div class = 'project-info-content'>
+                <div class = 'project-info-title'>
+                    <p>https://skurczy.com</p>
+                </div>
+                <div class = 'project-info-stats'>
+                    <button class = 'project-info-stats-dev-time'>
+                        <p><span class = 'project-info-stats-big-text'>2 months</span></p>
+                        <p><span class = 'project-info-stats-small-text'>Development time</span></p>
+                    </button>
+                    <button class = 'project-info-stats-lines-of-codes'>
+                        <p><span class = 'project-info-stats-big-text'>~ 2,500</span></p>
+                        <p><span class = 'project-info-stats-small-text'>Lines of code</span></p>
+                    </button>
+                </div>
+                <div class = 'project-info-text'>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus aenean vel elit scelerisque mauris. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Justo donec enim diam vulputate ut. Consectetur libero id faucibus nisl tincidunt eget nullam non nisi.</p>
+                </div>
+            </div>
+            <img src = ''/>
+            <span class = 'first-wave'></span>
+            <span class = 'second-wave'></span>
         </section>
-        
-        <footer>
+
+        <footer class = 'alternative-footer'>
             <div id = 'footer-logo'>
                 <p>SKURCZY</p>
             </div>
@@ -83,6 +86,6 @@
                 <span class = 'second-wave'></span>
             </div>
         </footer>
-        <script type = 'module' src = 'app/website-project.js'></script>
+        <script type = 'module' src = 'app/about.js'></script>
     </body>
 </html>
