@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = links.homepage;
     })
 
-    buttons.websiteProject.addEventListener('click', function() {
-        window.location.href = links.websiteProject;
+    buttons.skurczycom.addEventListener('click', function() {
+        window.location.href = links.skurczycom;
     })
 })

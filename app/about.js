@@ -12,18 +12,18 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 
     buttons.githubPin.addEventListener('click', function() {
-        window.location.href = links.github;
+        window.open(links.github);
     })
 
     buttons.discordPin.addEventListener('click', function() {
-        window.location.href = links.discord;
+        window.open(links.discord);
     })
 
     buttons.xPin.addEventListener('click', function() {
-        window.location.href = links.x;
+        window.open(links.x);
     })
 
     buttons.spotifyPin.addEventListener('click', function() {
-        window.location.href = links.spotify;
+        window.open(links.spotify);
     })
 })
