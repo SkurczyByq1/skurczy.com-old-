@@ -23,3 +23,8 @@ export const buttons = {
     xPin: document.getElementById('x-pin'),
     spotifyPin: document.getElementById('spotify-pin')
 }
+
+export const version = {
+    number: '1.0',
+    date: '31 January 2024'
+}

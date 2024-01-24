@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&family=Roboto:wght@400;700&display=swap');
 
+/* bodies */
+
 body {
     background: linear-gradient(#5d0f12, #922323, #5d0f12);
     background-attachment: local;
@@ -19,11 +21,38 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    /*transition: all 1s cubic-bezier(0, 0, 0.2, 1) 0s;*/
+    text-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25)
+}
+
+
+
+/* global elements */
+
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
 }
 
 a {
-    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: #FFFFFF;
     text-decoration: none;
@@ -75,35 +104,25 @@ button:hover p {
 }
 
 .button-text {
-    font-family: 'Roboto', sans-serif;
     font-size: 24px;
     font-weight: 700;
     color: #000000;
     margin: 0 8px 0;
-    text-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25);
-}
-
-.section-title p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 64px;
-    color: #FFFFFF;
-    font-weight: 700;
-    text-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25);
-    -webkit-animation: white-glow 2s ease-in-out infinite alternate;
-    -moz-animation: white-glow 2s ease-in-out infinite alternate;
-    animation: white-glow 2s ease-in-out infinite alternate;
 }
 
 .section-description {
     width: 420px;
 }
 
-.section-description p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color: #FFFFFF;
-    font-weight: 400;
-    text-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25);
+.title {
+    margin: 0 0 17px;
+}
+
+.glowing-title {
+    margin: 0 0 17px;
+    -webkit-animation: white-glow 2s ease-in-out infinite alternate;
+    -moz-animation: white-glow 2s ease-in-out infinite alternate;
+    animation: white-glow 2s ease-in-out infinite alternate;
 }
 
 .underline {
@@ -174,21 +193,16 @@ button:hover p {
     backdrop-filter: blur(4px);
 }
 
-#navbar-logo {
-    height: min-content;
-    width: min-content;
-}
-
-#navbar-logo p {
+#navbar-logo h1 {
     font-family: 'Libre Barcode 39 Extended Text', cursive;
-    font-size: 64px;
+    font-weight: 400;
     color: #FFFFFF;
     -webkit-text-stroke-color: #FF0000;
     -webkit-text-stroke-width: 0;
     transition: 0.3s;
 }
 
-#navbar-logo p:hover {
+#navbar-logo h1:hover {
     cursor: pointer;
     -webkit-text-stroke-color: #FF0000;
     -webkit-text-stroke-width: 1px;
@@ -215,28 +229,14 @@ button:hover p {
 }
 
 .projects-section-icon {
-    font-family: 'Roboto', sans-serif;
     font-size: 307px;
     font-weight: 700;
     color: #FFFFFF;
-    text-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25);
     margin: 0 95px 0
 }
 
 .projects-section-icon:hover {
     cursor: default;
-}
-
-.projects-section .section-description p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color: #FFFFFF;
-    font-weight: 400;
-    text-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25);
-}
-
-.projects-content .section-title {
-    margin: 0 0 17px;
 }
 
 .projects-content .underline {
@@ -258,13 +258,6 @@ button:hover p {
     border-radius: 0 64px 64px 0;
     margin: 0 -4px 0;
 }
-
-/*.projects-button-icon {
-    font-family: 'Roboto', sans-serif;
-    font-size: 27px;
-    font-weight: 700;
-    text-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25);
-}*/
 
 #projects-button:hover .projects-button-icon {
     color: #FFFFFF;
@@ -297,10 +290,6 @@ button:hover p {
     width: 420px;
     height: 320px;
     margin: 0 121px 0;
-}
-
-.github-content .section-title {
-    margin: 0 0 17px;
 }
 
 .github-content .underline {
@@ -353,20 +342,15 @@ button:hover p {
 .discord-content {
     width: 420px;
     height: 320px;
-    margin: 0px 95px 0px;
-}
-
-
-.discord-content .section-title {
-    margin: 0px 0px 17px;
+    margin: 0 95px 0;
 }
 
 .discord-content .underline {
-    margin: 17px 0px 9px;
+    margin: 17px 0 9px;
 }
 
 #discord-button {
-    margin: 55px 0px 0px;
+    margin: 55px 0 0;
 }
 
 .discord-button-icon {
@@ -390,7 +374,7 @@ button:hover p {
 
 
 
-/*footer*/
+/* footer */
 
 footer {
     width: 100%;
@@ -402,18 +386,16 @@ footer {
     position: relative;
 }
 
-#footer-logo p {
+#footer-logo h1 {
     font-family: 'Libre Barcode 39 Extended Text', cursive;
-    font-size: 64px;
-    color: #FFFFFF;
-    text-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25);
+    font-weight: 400;
     margin: 0 96px 0;
     transition: 0.3s;
     -webkit-text-stroke-color: #FF0000;
     -webkit-text-stroke-width: 0;
 }
 
-#footer-logo p:hover {
+#footer-logo h1:hover {
     cursor: pointer;
     -webkit-text-stroke-width: 1px;
     text-shadow: 0 0 60px #FF0000;
@@ -439,13 +421,6 @@ footer {
     margin: 0 180px 4px 32px;
 }
 
-.footer-title p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-    color: #FFFFFF;
-}
-
 .footer-content-link {
     margin: 12px 0 0 0;
 }
@@ -468,6 +443,7 @@ footer .second-wave{
 }
 
 
+
 /* projects page */
 
 .projects {
@@ -485,11 +461,6 @@ footer .second-wave{
 }
 
 .projects-title h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 64px;
-    color: #FFFFFF;
-    text-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25);
     margin: 64px 0 16px;
 }
 
@@ -524,22 +495,12 @@ footer .second-wave{
     margin: 14px 0 0;
 }
 
-.card h1 {
-    font-style: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    color: #FFFFFF;
+.card h2 {
     margin: 14px 0 0;
-    text-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25);
 }
 
 .card p {
-    font-style: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    color: #FFFFFF;
     margin: 14px 0 0;
-    text-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25);
 }
 
 .card:hover {
@@ -578,32 +539,15 @@ footer .second-wave{
     margin: 0 121px 0;
 }
 
-.about-title p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 64px;
-    color: #FFFFFF;
-    font-weight: 700;
-    text-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25);
-    margin: 0 0 17px;
-}
-
 .about-content .underline {
     margin: 17px 0 9px;
-}
-
-.about-text p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color: #FFFFFF;
-    font-weight: 400;
-    text-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25);
-    margin: 0 0 17px;
 }
 
 .social-media-pins {
     width: 420px;
     height: 64px;
     display: flex;
+    margin: 17px 0 0;
 }
 
 .social-media-pins button {
@@ -739,17 +683,7 @@ footer .second-wave{
     animation: white-glow-svg 2s ease-in-out infinite alternate;
 }
 
-#back-to-previous {
-    width:  fit-content;
-    height: fit-content;
-    position: absolute;
-    margin: 96px 0 0 128px;
-}
 
-
-.arrow {
-    font-family: 'Segoe UI Symbol', arial, sans-serif;
-}
 
 /* website project */
 
@@ -774,15 +708,6 @@ footer .second-wave{
     width: 420px;
     height: 320px;
     margin: 0 121px 0;
-}
-
-.project-info-title p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 64px;
-    color: #FFFFFF;
-    font-weight: 700;
-    text-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25);
-    margin: 0 0 17px;
 }
 
 .project-info-stats {
@@ -811,58 +736,19 @@ footer .second-wave{
 }
 
 .project-info-stats-small-text {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    color: #000000;
     font-weight: 700;
-    margin: 0px 0px 0px;
 }
 
 .project-info-stats-big-text {
-    font-family: 'Roboto', sans-serif;
     font-size: 28px;
+    color: #000000;
     font-weight: 700;
-    margin: 0px 0px 0px;
 }
 
-.project-info-text p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color: #FFFFFF;
-    font-weight: 400;
-    text-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25);
-    margin: 0 0 17px;
-}
 
-/* hurricane project*/
 
-.hurricane-project {
-    height: 980px;
-    width: 100%;
-    background: #22272E;
-}
-
-.hurricane-project h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 256px;
-    color: #FFFFFF;
-}
-
-.hurricane-project h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 64px;
-    color: #FFFFFF;
-}
-
-.hurricane-project .project-content {
-    width: fit-content;
-    height: fit-content;
-    margin: 0 auto;
-    animation: error-levitating 3s ease-in-out infinite alternate;
-}
-
-.hurricane-project .project-content:hover {
-    cursor: default;
-}
+/* animations */
 
 @-webkit-keyframes white-glow {
     from {
@@ -917,6 +803,8 @@ footer .second-wave{
         background-position-x: 1920px;
     }
 }
+
+
 
 /* scrollbar */
 
