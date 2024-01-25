@@ -11,7 +11,6 @@ export const links = {
 
 export const buttons = {
     navbar: document.getElementById('navbar-logo'),
-    footer: document.getElementById('footer-logo'),
     projects: document.getElementById('projects-button'),
     about: document.getElementById('about-button'),
     skurczycom: document.getElementById('skurczy.com'),
@@ -22,4 +21,9 @@ export const buttons = {
     discordPin: document.getElementById('discord-pin'),
     xPin: document.getElementById('x-pin'),
     spotifyPin: document.getElementById('spotify-pin')
+}
+
+export const version = {
+    number: '1.0',
+    date: '31 January 2024'
 }
