@@ -7,10 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = links.homepage;
     })
 
-    buttons.footer.addEventListener('click', function() {
-        window.location.href = links.homepage;
-    })
-
     buttons.projects.addEventListener('click', function() {
         window.location.href = links.projects;
     })

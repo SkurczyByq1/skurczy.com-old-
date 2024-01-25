@@ -11,7 +11,6 @@ export const links = {
 
 export const buttons = {
     navbar: document.getElementById('navbar-logo'),
-    footer: document.getElementById('footer-logo'),
     projects: document.getElementById('projects-button'),
     about: document.getElementById('about-button'),
     skurczycom: document.getElementById('skurczy.com'),
