@@ -147,20 +147,22 @@ button:hover p {
 
 .first-wave {
     width: 100%;
-    height: 324px;
+    height: 33.575vh;
     background: url(images/wave1.svg);
+    background-size: cover;
     animation: waves 120s linear infinite;
     z-index: -1;
     opacity: 1;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     left: 0;
 }
 
 .second-wave {
     width: 100%;
-    height: 324px;
+    height: 33.575vh;
     background: url(images/wave2.svg);
+    background-size: cover;
     animation: waves 20s linear infinite;
     z-index: -1;
     opacity: 1;
@@ -174,7 +176,7 @@ button:hover p {
 /*navbar*/
 
 .navbar {
-    height: 96px;
+    height: 9.948vh;
     width: 100%;
     position: sticky;
     top: 0;
@@ -183,7 +185,7 @@ button:hover p {
 }
 
 .navbar-container {
-    height: 96px;
+    height: 9.948vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -215,7 +217,7 @@ button:hover p {
 
 .projects-section {
     width: 100%;
-    height: 984px;
+    height: 90.052vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -272,8 +274,10 @@ button:hover p {
 
 .github-section {
     width: 100%;
-    height: 640px;
+    height: 66.321vh;
     background: linear-gradient(to right, rgba(28, 33, 40, 0.9), rgba(28, 33, 40, 0.6), rgba(28, 33, 40, 0.9)), url(images/github-background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -325,8 +329,10 @@ button:hover p {
 
 .discord-section {
     width: 100%;
-    height: 640px;
+    height: 66.321vh;
     background: linear-gradient(to left, rgba(28, 33, 40, 0.9), rgba(28, 33, 40, 0.6), rgba(28, 33, 40, 0.9)), url(images/discord-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -448,7 +454,7 @@ footer .second-wave{
 
 .projects {
     width: 100%;
-    height: 984px;
+    height: 90.052vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -516,7 +522,7 @@ footer .second-wave{
 
 .about {
     width: 100%;
-    height: 984px;
+    height: 90.052vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -545,7 +551,7 @@ footer .second-wave{
 
 .social-media-pins {
     width: 420px;
-    height: 64px;
+    height: 6.632vh;
     display: flex;
     margin: 17px 0 0;
 }
@@ -689,7 +695,7 @@ footer .second-wave{
 
 .project-info {
     width: 100%;
-    height: 984px;
+    height: 90.052vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -715,13 +721,6 @@ footer .second-wave{
 }
 
 .project-info-stats-dev-time {
-    width: 200px;
-    height: 64px;
-    border-radius: 64px 0 0 64px;
-    margin: 0 -4px 0;
-}
-
-.project-info-stats-dev-time:hover {
     width: 200px;
     height: 64px;
     border-radius: 64px 0 0 64px;
@@ -796,10 +795,13 @@ footer .second-wave{
 }
 
 @-webkit-keyframes waves {
-    from {
+    0% {
         background-position-x: 0;
     }
-    to {
+    50% {
+        background-position-x: 720px;
+    }
+    100% {
         background-position-x: 1920px;
     }
 }
@@ -814,11 +816,10 @@ footer .second-wave{
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #22272E;
+    background-color: #000509;
     border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: #1c2128;
 }
-
