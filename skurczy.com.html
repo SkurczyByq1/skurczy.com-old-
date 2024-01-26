@@ -5,6 +5,7 @@
         <meta charset = 'utf-8'>
         <title>SKURCZY</title>
         <link rel = 'stylesheet' href = 'style.css'>
+        <link rel = 'icon' href = 'images/branding/tab-icon.svg'>
     </head>
     <body>
         <navbar class = 'navbar'>
@@ -16,30 +17,46 @@
             <div class = 'section-border'></div>
         </navbar>
 
-        <section class = 'project-info'>
+        <div class = 'projects-title'>
+            <h1 class = 'glowing-title'>https://skurczy.com</h1>
+            <div class = 'project-info-stats'>
+                <button class = 'project-info-stats-left'>
+                    <p><span class = 'project-info-stats-big-text'>2 months</span></p>
+                    <p><span class = 'project-info-stats-small-text'>Development time</span></p>
+                </button>
+                <button class = 'project-info-stats-right'>
+                    <p><span class = 'project-info-stats-big-text'>~ 2,500</span></p>
+                    <p><span class = 'project-info-stats-small-text'>Lines of code</span></p>
+                </button>
+            </div>
+        </div>
+
+        <section class = 'skurczycom-section-1 project-info'>
             <div class = 'project-info-content'>
-                <h1 class = 'title'>https://skurczy.com</h1>
-                <div class = 'project-info-stats'>
-                    <button class = 'project-info-stats-dev-time'>
-                        <p><span class = 'project-info-stats-big-text'>2 months</span></p>
-                        <p><span class = 'project-info-stats-small-text'>Development time</span></p>
-                    </button>
-                    <button class = 'project-info-stats-lines-of-codes'>
-                        <p><span class = 'project-info-stats-big-text'>~ 2,500</span></p>
-                        <p><span class = 'project-info-stats-small-text'>Lines of code</span></p>
-                    </button>
-                </div>
+                <h1 class = 'title'>My first website</h1>
+                <div class = 'underline'></div>
                 <div class = 'section-description'>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus aenean vel elit scelerisque mauris. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Justo donec enim diam vulputate ut. Consectetur libero id faucibus nisl tincidunt eget nullam non nisi.</p>
                 </div>
             </div>
-            <img src = 'images/homepage.png'/>
-            <span class = 'first-wave'></span>
-            <span class = 'second-wave'></span>
+            <img src = 'images/projects-images/homepage.png'/>
         </section>
 
-        <footer>
+        <section class = 'skurczycom-section-2 project-info'>
+            <img src = 'images/projects-images/portofolio.png'/>
+            <div class = 'project-info-content'>
+                <h1 class = 'title'>My portofolio</h1>
+                <div class = 'underline'></div>
+                <div class = 'section-description'>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus aenean vel elit scelerisque mauris. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Justo donec enim diam vulputate ut. Consectetur libero id faucibus nisl tincidunt eget nullam non nisi.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class = 'homepage-footer'>
             <h1>SKURCZY<span> © 2024</span></h1>
+            <span class = 'first-wave'></span>
+            <span class = 'second-wave'></span>
         </footer>
 
         <script type = 'module' src = 'app/project.js'></script>
