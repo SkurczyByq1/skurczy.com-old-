@@ -148,7 +148,7 @@ button:hover p {
 .first-wave {
     width: 100%;
     height: 33.575vh;
-    background: url(images/wave1.svg);
+    background: url(images/other/wave1.svg);
     background-size: cover;
     animation: waves 120s linear infinite;
     z-index: -1;
@@ -161,7 +161,7 @@ button:hover p {
 .second-wave {
     width: 100%;
     height: 33.575vh;
-    background: url(images/wave2.svg);
+    background: url(images/other/wave2.svg);
     background-size: cover;
     animation: waves 20s linear infinite;
     z-index: -1;
@@ -275,7 +275,7 @@ button:hover p {
 .github-section {
     width: 100%;
     height: 66.321vh;
-    background: linear-gradient(to right, rgba(28, 33, 40, 0.9), rgba(28, 33, 40, 0.6), rgba(28, 33, 40, 0.9)), url(images/github-background.svg);
+    background: linear-gradient(to right, rgba(28, 33, 40, 0.9), rgba(28, 33, 40, 0.6), rgba(28, 33, 40, 0.9)), url(images/backgrounds/github-background.svg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -308,7 +308,7 @@ button:hover p {
     width: 32px;
     height: 32px;
     margin: 0 8px -6px;
-    background-image: url(images/github-mark.svg);
+    background-image: url(images/logos/github-mark.svg);
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
     background-size: cover;
     background-position: center;
@@ -316,7 +316,7 @@ button:hover p {
 }
 
 #github-button:hover .github-button-icon {
-    background-image: url(images/github-mark-white.svg);
+    background-image: url(images/logos/github-mark-white.svg);
     filter: drop-shadow(none);
     -webkit-animation: white-glow-svg 1s ease-in-out infinite alternate;
     -moz-animation: white-glow-svg 1s ease-in-out infinite alternate;
@@ -330,7 +330,7 @@ button:hover p {
 .discord-section {
     width: 100%;
     height: 66.321vh;
-    background: linear-gradient(to left, rgba(28, 33, 40, 0.9), rgba(28, 33, 40, 0.6), rgba(28, 33, 40, 0.9)), url(images/discord-background.png);
+    background: linear-gradient(to left, rgba(28, 33, 40, 0.9), rgba(28, 33, 40, 0.6), rgba(28, 33, 40, 0.9)), url(images/backgrounds/discord-background.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -363,7 +363,7 @@ button:hover p {
     width: 42px;
     height: 32px;
     margin: 0 8px -6px;
-    background-image: url(images/discord-mark-black.svg);
+    background-image: url(images/logos/discord-mark-black.svg);
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
     background-size: cover;
     background-position: center;
@@ -371,7 +371,7 @@ button:hover p {
 }
 
 #discord-button:hover .discord-button-icon {
-    background-image: url(images/discord-mark-white.svg);
+    background-image: url(images/logos/discord-mark-white.svg);
     filter: drop-shadow(none);
     -webkit-animation: white-glow-svg 1s ease-in-out infinite alternate;
     -moz-animation: white-glow-svg 1s ease-in-out infinite alternate;
@@ -436,6 +436,7 @@ footer .second-wave{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 16.891vh;
 }
 
 .projects-title h1 {
@@ -548,7 +549,7 @@ footer .second-wave{
 #github-pin .pin-icon {
     width: 32px;
     height: 32px;
-    background: url('images/github-mark.svg');
+    background: url('images/logos/github-mark.svg');
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
     background-size: cover;
     background-position: center;
@@ -563,7 +564,7 @@ footer .second-wave{
 }
 
 #github-pin:hover  .pin-icon{
-    background: url('images/github-mark-white.svg');
+    background: url('images/logos/github-mark-white.svg');
     background-size: cover;
     background-position: center;
     display: inline-block;
@@ -578,7 +579,7 @@ footer .second-wave{
 #discord-pin .pin-icon {
     width: 32px;
     height: 24px;
-    background: url('images/discord-mark-black.svg');
+    background: url('images/logos/discord-mark-black.svg');
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
     background-size: cover;
     background-position: center;
@@ -593,7 +594,7 @@ footer .second-wave{
 }
 
 #discord-pin:hover  .pin-icon{
-    background: url('images/discord-mark-white.svg');
+    background: url('images/logos/discord-mark-white.svg');
     background-size: cover;
     background-position: center;
     display: inline-block;
@@ -608,7 +609,7 @@ footer .second-wave{
 #x-pin .pin-icon {
     width: 24px;
     height: 24px;
-    background: url('images/x-logo-black.svg');
+    background: url('images/logos/x-logo-black.svg');
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
     background-size: cover;
     background-position: center;
@@ -623,7 +624,7 @@ footer .second-wave{
 }
 
 #x-pin:hover  .pin-icon{
-    background: url('images/x-logo-white.svg');
+    background: url('images/logos/x-logo-white.svg');
     background-size: cover;
     background-position: center;
     display: inline-block;
@@ -638,7 +639,7 @@ footer .second-wave{
 #spotify-pin .pin-icon {
     width: 32px;
     height: 32px;
-    background: url('images/spotify-logo-black.png');
+    background: url('images/logos/spotify-logo-black.png');
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
     background-size: cover;
     background-position: center;
@@ -653,7 +654,7 @@ footer .second-wave{
 }
 
 #spotify-pin:hover  .pin-icon{
-    background: url('images/spotify-logo-white.png');
+    background: url('images/logos/spotify-logo-white.png');
     background-size: cover;
     background-position: center;
     display: inline-block;
@@ -667,7 +668,7 @@ footer .second-wave{
 
 .project-info {
     width: 100%;
-    height: 90.052vh;
+    height: 73.161vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -679,27 +680,32 @@ footer .second-wave{
     height: 292.5px;
     border-radius: 32px;
     box-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25);
-    margin: 0 95px 0
+    margin: 0 95px 0;
+    transition: 0.5s;
+}
+
+.project-info img:hover {
+    transform: translateY(-20px);
+    cursor: pointer;
 }
 
 .project-info-content {
-    width: 420px;
-    height: 320px;
     margin: 0 121px 0;
 }
 
 .project-info-stats {
-    margin: 32px 0 36px;
+    margin: 24px 0 28px;
+    z-index: 2;
 }
 
-.project-info-stats-dev-time {
+.project-info-stats-left {
     width: 200px;
     height: 64px;
     border-radius: 64px 0 0 64px;
     margin: 0 -4px 0;
 }
 
-.project-info-stats-lines-of-codes {
+.project-info-stats-right {
     width: 200px;
     height: 64px;
     border-radius: 0 64px 64px 0;
@@ -717,6 +723,27 @@ footer .second-wave{
     font-weight: 700;
 }
 
+.skurczycom-section-2 {
+    background: rgba(34, 39, 46, 1);
+}
+
+.project-info .underline {
+    margin: 17px 0 12px;
+}
+
+.project-info-stats button:hover .project-info-stats-big-text {
+    color: #FFFFFF;
+    animation: white-glow 2s infinite alternate;
+    -moz-animation: white-glow 2s infinite alternate;
+    -webkit-animation: white-glow 2s infinite alternate;
+}
+
+.project-info-stats button:hover .project-info-stats-small-text {
+    color: #FFFFFF;
+    animation: white-glow 2s infinite alternate;
+    -moz-animation: white-glow 2s infinite alternate;
+    -webkit-animation: white-glow 2s infinite alternate;
+}
 
 
 /* animations */
@@ -754,15 +781,6 @@ footer .second-wave{
     }
     to {
         transform: translateY(10px);
-    }
-}
-
-@-webkit-keyframes error-levitating {
-    from {
-        transform: translateY(180px);
-    }
-    to {
-        transform: translateY(210px);
     }
 }
 
