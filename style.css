@@ -680,7 +680,13 @@ footer .second-wave{
     height: 292.5px;
     border-radius: 32px;
     box-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25);
-    margin: 0 95px 0
+    margin: 0 95px 0;
+    transition: 0.5s;
+}
+
+.project-info img:hover {
+    transform: translateY(-20px);
+    cursor: pointer;
 }
 
 .project-info-content {
@@ -722,7 +728,7 @@ footer .second-wave{
 }
 
 .project-info .underline {
-    margin: 17px 0 9px;
+    margin: 17px 0 12px;
 }
 
 .project-info-stats button:hover .project-info-stats-big-text {
@@ -775,15 +781,6 @@ footer .second-wave{
     }
     to {
         transform: translateY(10px);
-    }
-}
-
-@-webkit-keyframes error-levitating {
-    from {
-        transform: translateY(180px);
-    }
-    to {
-        transform: translateY(210px);
     }
 }
 
