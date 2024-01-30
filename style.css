@@ -21,7 +21,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    text-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25)
+    text-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25);
 }
 
 
@@ -29,31 +29,31 @@ body {
 /* global elements */
 
 h1 {
-    font-size: 64px;
+    font-size: 4em;
     font-weight: 700;
     color: #FFFFFF;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 2.5em;
     font-weight: 700;
     color: #FFFFFF;
 }
 
 h3 {
-    font-size: 36px;
+    font-size: 2.25em;
     font-weight: 700;
     color: #FFFFFF;
 }
 
 p {
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 400;
     color: #FFFFFF;
 }
 
 a {
-    font-size: 20px;
+    font-size: 1.25em;
     color: #FFFFFF;
     text-decoration: none;
 }
@@ -90,21 +90,21 @@ button:hover {
 button:hover .button-text {
     color: #FFFFFF;
     text-shadow: none;
-    -webkit-animation: white-glow 1s ease-in-out infinite alternate;
-    -moz-animation: white-glow 1s ease-in-out infinite alternate;
-    animation: white-glow 1s ease-in-out infinite alternate;
+    -webkit-animation: text-white-glow 1s ease-in-out infinite alternate;
+    -moz-animation: text-white-glow 1s ease-in-out infinite alternate;
+    animation: text-white-glow 1s ease-in-out infinite alternate;
 }
 
 button:hover p {
     color: #FFFFFF;
     text-shadow: none;
-    -webkit-animation: white-glow 1s ease-in-out infinite alternate;
-    -moz-animation: white-glow 1s ease-in-out infinite alternate;
-    animation: white-glow 1s ease-in-out infinite alternate;
+    -webkit-animation: text-white-glow 1s ease-in-out infinite alternate;
+    -moz-animation: text-white-glow 1s ease-in-out infinite alternate;
+    animation: text-white-glow 1s ease-in-out infinite alternate;
 }
 
 .button-text {
-    font-size: 24px;
+    font-size: 1.75em;
     font-weight: 700;
     color: #000000;
     margin: 0 8px 0;
@@ -120,9 +120,9 @@ button:hover p {
 
 .glowing-title {
     margin: 0 0 17px;
-    -webkit-animation: white-glow 2s ease-in-out infinite alternate;
-    -moz-animation: white-glow 2s ease-in-out infinite alternate;
-    animation: white-glow 2s ease-in-out infinite alternate;
+    -webkit-animation: text-white-glow 2s ease-in-out infinite alternate;
+    -moz-animation: text-white-glow 2s ease-in-out infinite alternate;
+    animation: text-white-glow 2s ease-in-out infinite alternate;
 }
 
 .underline {
@@ -231,7 +231,7 @@ button:hover p {
 }
 
 .projects-section-icon {
-    font-size: 307px;
+    font-size: 19.1875em;
     font-weight: 700;
     color: #FFFFFF;
     margin: 0 95px 0
@@ -261,13 +261,6 @@ button:hover p {
     margin: 0 -4px 0;
 }
 
-#projects-button:hover .projects-button-icon {
-    color: #FFFFFF;
-    -webkit-animation: white-glow 1s ease-in-out infinite alternate;
-    -moz-animation: white-glow 1s ease-in-out infinite alternate;
-    animation: white-glow 1s ease-in-out infinite alternate;
-}
-
 
 
 /* github */
@@ -284,8 +277,8 @@ button:hover p {
 }
 
 .github-section img {
-    width: 368px;
-    height: 360px;
+    width: 38.135vh;
+    height: 37.306vh;
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0,  0.25));
     margin: 0 121px 0;
 }
@@ -318,9 +311,9 @@ button:hover p {
 #github-button:hover .github-button-icon {
     background-image: url(images/logos/github-mark-white.svg);
     filter: drop-shadow(none);
-    -webkit-animation: white-glow-svg 1s ease-in-out infinite alternate;
-    -moz-animation: white-glow-svg 1s ease-in-out infinite alternate;
-    animation: white-glow-svg 1s ease-in-out infinite alternate;
+    -webkit-animation: svg-white-glow 1s ease-in-out infinite alternate;
+    -moz-animation: svg-white-glow 1s ease-in-out infinite alternate;
+    animation: svg-white-glow 1s ease-in-out infinite alternate;
 }
 
 
@@ -339,8 +332,8 @@ button:hover p {
 }
 
 .discord-section img {
-    width: 475px;
-    height: 360px;
+    width: 49.223vh;
+    height: 37.306vh;
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0,  0.25));
     margin: 0 95px 0;
 }
@@ -373,9 +366,9 @@ button:hover p {
 #discord-button:hover .discord-button-icon {
     background-image: url(images/logos/discord-mark-white.svg);
     filter: drop-shadow(none);
-    -webkit-animation: white-glow-svg 1s ease-in-out infinite alternate;
-    -moz-animation: white-glow-svg 1s ease-in-out infinite alternate;
-    animation: white-glow-svg 1s ease-in-out infinite alternate;
+    -webkit-animation: svg-white-glow 1s ease-in-out infinite alternate;
+    -moz-animation: svg-white-glow 1s ease-in-out infinite alternate;
+    animation: svg-white-glow 1s ease-in-out infinite alternate;
 }
 
 
@@ -395,15 +388,15 @@ footer {
 footer h1 {
     font-family: 'Libre Barcode 39 Extended Text', cursive;
     font-weight: 400;
-    font-size: 64px;
+    font-size: 4em;
     text-align: center;
     word-spacing: 16px;
 }
 
 footer span {
     font-family: 'Roboto', sans-serif;
-    font-size: 400;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 0.25em;
 }
 
 .homepage-footer {
@@ -420,75 +413,6 @@ footer .second-wave{
     background-size: auto;
 }
 
-
-
-/* projects page */
-
-.projects {
-    width: 100%;
-    height: 90.052vh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
-
-.projects-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 16.891vh;
-}
-
-.projects-title h1 {
-    margin: 64px 0 16px;
-}
-
-.websites-cards {
-    display: flex;
-}
-
-.card {
-    height: 400px;
-    width: 270px;
-    background: #22272E;
-    border-radius: 32px;
-    border-style: solid;
-    border-color: rgba(125, 125, 125, 0.5);
-    border-width: 1px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 64px 0 64px 64px;
-    transition: 0.5s;
-}
-
-.card img {
-    height: 250px;
-    width: 250px;
-    border-radius: 24px;
-    margin: 10px 0 0;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.card .underline {
-    margin: 14px 0 0;
-}
-
-.card h2 {
-    margin: 14px 0 0;
-}
-
-.card p {
-    margin: 14px 0 0;
-}
-
-.card:hover {
-    animation: red-glow 1s ease-in-out infinite alternate;
-    -moz-animation: red-glow 1s ease-in-out infinite alternate;
-    -webkit-animation: red-glow 1s ease-in-out infinite alternate;
-    transform: translateY(-20px);
-    cursor: pointer;
-}
 
 
 /* about page */
@@ -569,7 +493,7 @@ footer .second-wave{
     background-position: center;
     display: inline-block;
     filter: drop-shadow(none);
-    animation: white-glow-svg 2s ease-in-out infinite alternate;
+    animation: svg-white-glow 2s ease-in-out infinite alternate;
 }
 
 #discord-pin {
@@ -599,7 +523,7 @@ footer .second-wave{
     background-position: center;
     display: inline-block;
     filter: drop-shadow(none);
-    animation: white-glow-svg 2s ease-in-out infinite alternate;
+    animation: svg-white-glow 2s ease-in-out infinite alternate;
 }
 
 #x-pin {
@@ -629,7 +553,7 @@ footer .second-wave{
     background-position: center;
     display: inline-block;
     filter: drop-shadow(none);
-    animation: white-glow-svg 2s ease-in-out infinite alternate;
+    animation: svg-white-glow 2s ease-in-out infinite alternate;
 }
 
 #spotify-pin {
@@ -659,7 +583,77 @@ footer .second-wave{
     background-position: center;
     display: inline-block;
     filter: drop-shadow(none);
-    animation: white-glow-svg 2s ease-in-out infinite alternate;
+    animation: svg-white-glow 2s ease-in-out infinite alternate;
+}
+
+
+
+/* portofolio */
+
+.projects {
+    width: 100%;
+    height: 90.052vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 16.891vh;
+}
+
+.projects-title h1 {
+    margin: 64px 0 16px;
+}
+
+.websites-cards {
+    display: flex;
+}
+
+.card {
+    height: 400px;
+    width: 270px;
+    background: #22272E;
+    border-radius: 32px;
+    border-style: solid;
+    border-color: rgba(125, 125, 125, 0.5);
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 64px 0 64px 64px;
+    transition: 0.5s;
+}
+
+.card img {
+    height: 250px;
+    width: 250px;
+    border-radius: 24px;
+    margin: 10px 0 0;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card .underline {
+    margin: 14px 0 0;
+}
+
+.card h2 {
+    margin: 14px 0 0;
+}
+
+.card p {
+    margin: 14px 0 0;
+}
+
+.card:hover {
+    animation: red-glow 1s ease-in-out infinite alternate;
+    -moz-animation: red-glow 1s ease-in-out infinite alternate;
+    -webkit-animation: red-glow 1s ease-in-out infinite alternate;
+    transform: translateY(-20px);
+    cursor: pointer;
 }
 
 
@@ -718,7 +712,7 @@ footer .second-wave{
 }
 
 .project-info-stats-big-text {
-    font-size: 28px;
+    font-size: 1.75em;
     color: #000000;
     font-weight: 700;
 }
@@ -733,22 +727,150 @@ footer .second-wave{
 
 .project-info-stats button:hover .project-info-stats-big-text {
     color: #FFFFFF;
-    animation: white-glow 2s infinite alternate;
-    -moz-animation: white-glow 2s infinite alternate;
-    -webkit-animation: white-glow 2s infinite alternate;
+    animation: text-white-glow 2s infinite alternate;
+    -moz-animation: text-white-glow 2s infinite alternate;
+    -webkit-animation: text-white-glow 2s infinite alternate;
 }
 
 .project-info-stats button:hover .project-info-stats-small-text {
     color: #FFFFFF;
-    animation: white-glow 2s infinite alternate;
-    -moz-animation: white-glow 2s infinite alternate;
-    -webkit-animation: white-glow 2s infinite alternate;
+    animation: text-white-glow 2s infinite alternate;
+    -moz-animation: text-white-glow 2s infinite alternate;
+    -webkit-animation: text-white-glow 2s infinite alternate;
+}
+
+
+
+/* mobile devices */
+
+@media screen and (max-width: 1089px) {
+
+    /* homepage */
+
+    .projects-section {
+        flex-direction: column;
+    }
+
+    .projects-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .github-section {
+        height: 50vh;
+    }
+
+    .github-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .discord-section {
+        height: 50vh;
+    }
+
+    .discord-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    section img {
+        display: none;
+    }
+
+
+
+    /* about page */
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about img {
+        display: block;
+        margin: 0 0 48px;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-media-pins {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    /* portofolio */
+
+    .websites-cards {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 230px;
+        height: 330px;
+        margin: 64px 32px 0;
+    }
+
+    .card img {
+        display: block;
+        height: 200px;
+        width: 200px;
+    }
+
+    .card h2 {
+        font-size: 1.875em;
+    }
+
+    .projects-title h1 {
+        font-size: 3em;
+    }
+
+
+
+    /* projects pages */
+
+    .project-info {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .project-info img {
+        display: flex;
+        width: 390px;
+        height: 219.375px;
+        margin: 32px 0px 32px;
+    }
+
+    .project-info-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
 }
 
 
 /* animations */
 
-@-webkit-keyframes white-glow {
+@-webkit-keyframes text-white-glow {
     from {
         text-shadow: 0;
     }
@@ -757,7 +879,7 @@ footer .second-wave{
     }
 }
 
-@-webkit-keyframes white-glow-svg {
+@-webkit-keyframes svg-white-glow {
     from {
         filter: drop-shadow(0);
     }
