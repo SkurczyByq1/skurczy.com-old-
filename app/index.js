@@ -20,6 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 
     buttons.discord.addEventListener('click', function() {
-        window.open(links.discord);
+        alert("Discord server hasn't been done yet.")
     })
 })
