@@ -11,10 +11,13 @@ export const links = {
 
 export const buttons = {
     navbar: document.getElementById('navbar-logo'),
+    navbarMenu: document.getElementById('navbar-menu-icon'),
+    navbarMenuHomepage: document.getElementById('homepage-navbar-menu-button'),
+    navbarMenuAbout: document.getElementById('about-navbar-menu-button'),
+    navbarMenuPortfolio: document.getElementById('portfolio-navbar-menu-button'),
     projects: document.getElementById('projects-button'),
     about: document.getElementById('about-button'),
     skurczycom: document.getElementById('skurczy.com'),
-    goBack: document.getElementById('back-to-previous'),
     github: document.getElementById('github-button'),
     githubPin: document.getElementById('github-pin'),
     discord: document.getElementById('discord-button'),
@@ -24,6 +27,6 @@ export const buttons = {
 }
 
 export const version = {
-    number: '1.0',
-    date: '31 January 2024'
+    number: '1.1',
+    date: '3rd February 2024'
 }
