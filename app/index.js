@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 
     buttons.navbarMenuHomepage.addEventListener('click', function() {
-        window.location.href = links.homepage;
+        window.location.href = '#';
     })
 
     buttons.navbarMenuAbout.addEventListener('click', function() {

@@ -163,6 +163,10 @@ button:hover p {
     left: 0;
 }
 
+.mobile-image {
+    display: none;
+}
+
 
 
 /*navbar*/
@@ -226,9 +230,9 @@ button:hover p {
 #navbar-menu-card {
     position: absolute;
     height: 90.052vh;
-    top: 49px;
+    top: 5.078vh;
     right: -356px;
-    width: 320px;
+    width: 16.771vw;
     background: linear-gradient(-45deg, rgba(34, 39, 46, 0.5), rgba(34, 39, 46, 0.85));
     padding: 0 16px 0 16px;
     transition: 0.3s;
@@ -547,7 +551,7 @@ footer .second-wave{
     box-shadow: 0 0 60px #986ee2;
 }
 
-#github-pin:hover  .pin-icon{
+#github-pin:hover .pin-icon {
     background: url('images/logos/github-mark-white.svg');
     background-size: cover;
     background-position: center;
@@ -677,7 +681,7 @@ footer .second-wave{
     height: 400px;
     width: 270px;
     background: #22272E;
-    border-radius: 32px;
+    border-radius: 34px;
     border-style: solid;
     border-color: rgba(125, 125, 125, 0.5);
     border-width: 1px;
@@ -805,18 +809,69 @@ footer .second-wave{
 
 @media screen and (max-width: 1089px) {
 
+    h1 {
+        font-size: 5.5em;
+    }
+
+    p {
+        font-size: 2.5em;
+    }
+
+    button {
+        height: 96px;
+        width: 300px;
+    }
+
+    .underline {
+        height: 8px;
+        width: 64px;
+    }
+
+    .button-text {
+        font-size: 2.6em;
+    }
+
+	.navbar-menu {
+        display: none;
+    }
+
+    #navbar-logo h1 {
+        font-size: 6.5em;
+    }
+
+    
+
     /* homepage */
 
     .projects-section {
         flex-direction: column;
     }
 
+    .projects-section-icon {
+        font-size: 24em;
+        margin: 0 95px 64px;
+    }
+
     .projects-content {
+        width: 500px;
+        height: fit-content;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         flex-direction: column;
+    }
+
+    .projects-about-buttons {
+        margin: 64px 0 0;
+    }
+
+    #projects-button {
+        width: 250px;
+    }
+
+    #about-button {
+        width: 250px;
     }
 
     .github-section {
@@ -829,6 +884,12 @@ footer .second-wave{
         align-items: center;
         text-align: center;
         flex-direction: column;
+        height: fit-content;
+    }
+
+    .github-button-icon {
+        width: 48px;
+        height: 48px;
     }
 
     .discord-section {
@@ -841,6 +902,12 @@ footer .second-wave{
         align-items: center;
         text-align: center;
         flex-direction: column;
+        height: fit-content;
+    }
+
+    .discord-button-icon {
+        width: 52px;
+        height: 37.5px;
     }
 
     section img {
@@ -857,6 +924,8 @@ footer .second-wave{
 
     .about img {
         display: block;
+        width: 480px;
+        height: 480px;
         margin: 0 0 48px;
     }
 
@@ -866,11 +935,40 @@ footer .second-wave{
         justify-content: center;
         align-items: center;
         text-align: center;
+        height: fit-content;
     }
 
     .social-media-pins {
         display: flex;
         justify-content: center;
+        width: fit-content;
+        margin: 64px 0 0;
+    }
+
+    .social-media-pins button {
+        width: 96px;
+        height: 96px;
+        margin: 0 12px 0 12px;
+    }
+
+    #github-pin .pin-icon {
+        width: 64px;
+        height: 63px;
+    }
+
+    #discord-pin .pin-icon {
+        width: 64px;
+        height: 48px;
+    }
+
+    #x-pin .pin-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    #spotify-pin .pin-icon {
+        width: 64px;
+        height: 64px;
     }
 
 
@@ -883,38 +981,76 @@ footer .second-wave{
     }
 
     .card {
-        width: 230px;
-        height: 330px;
+        width: 345.6px;
+        height: 512px;
         margin: 64px 32px 0;
     }
 
     .card img {
         display: block;
-        height: 200px;
-        width: 200px;
+        height: 325.6px;
+        width: 325.6px;
     }
 
     .card h2 {
-        font-size: 1.875em;
+        font-size: 3em;
+    }
+
+    .card p {
+        font-size: 2em;
     }
 
     .projects-title h1 {
-        font-size: 3em;
+        font-size: 5.5em;
     }
 
 
 
     /* projects pages */
 
+    .projects-title {
+        height: 15vh;
+    }
+
+    .project-info-stats p {
+        line-height: 36px;
+    }
+
+    .project-info-stats-left {
+        height: 112px;
+        width: 320px;
+    }
+
+    .project-info-stats-right {
+        height: 112px;
+        width: 320px;
+    }
+
+    .project-info-stats-big-text {
+        font-size: 52px;
+    }
+
+    .project-info-stats-small-text {
+        font-size: 28px;
+    }
+
     .project-info {
         flex-direction: column;
-        height: 100vh;
+        height: 75.052vh;
+    }
+
+    .mobile-image {
+        display: block;
+    }
+
+    .desktop-image {
+        display: none !important;
     }
 
     .project-info img {
-        display: flex;
-        width: 390px;
-        height: 219.375px;
+        display: block;
+        width: 747px;
+        height: 420px;
         margin: 32px 0px 32px;
     }
 
