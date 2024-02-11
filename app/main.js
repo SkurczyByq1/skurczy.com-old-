@@ -1,6 +1,6 @@
 export const links = {
     homepage: 'index.html',
-    projects: 'projects.html',
+    portfolio: 'portfolio.html',
     about: 'about.html',
     skurczycom: 'skurczy.com.html',
     github: 'https://github.com/SkurczyByq1',
@@ -15,7 +15,7 @@ export const buttons = {
     navbarMenuHomepage: document.getElementById('homepage-navbar-menu-button'),
     navbarMenuAbout: document.getElementById('about-navbar-menu-button'),
     navbarMenuPortfolio: document.getElementById('portfolio-navbar-menu-button'),
-    projects: document.getElementById('projects-button'),
+    portfolio: document.getElementById('portfolio-button'),
     about: document.getElementById('about-button'),
     skurczycom: document.getElementById('skurczy.com'),
     github: document.getElementById('github-button'),

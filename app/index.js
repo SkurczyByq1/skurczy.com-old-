@@ -4,7 +4,7 @@ console.log('Website version: ' + version.number + ', published: ' + version.dat
 
 document.addEventListener('DOMContentLoaded', function() {
     buttons.navbar.addEventListener('click', function() {
-        window.location.href = links.homepage;
+        window.location.href = '#';
     })
 
     buttons.navbarMenu.addEventListener('click', function() {
@@ -37,11 +37,11 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 
     buttons.navbarMenuPortfolio.addEventListener('click', function() {
-        window.location.href = links.projects;
+        window.location.href = links.portfolio;
     })
 
-    buttons.projects.addEventListener('click', function() {
-        window.location.href = links.projects;
+    buttons.portfolio.addEventListener('click', function() {
+        window.location.href = links.portfolio;
     })
 
     buttons.about.addEventListener('click', function() {

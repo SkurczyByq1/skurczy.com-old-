@@ -37,6 +37,6 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 
     buttons.navbarMenuPortfolio.addEventListener('click', function() {
-        window.location.href = links.projects;
+        window.location.href = links.portfolio;
     })
 })

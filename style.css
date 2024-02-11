@@ -313,7 +313,7 @@ button:hover p {
     margin: 55px 0 0;
 }
 
-#projects-button {
+#portfolio-button {
     width: 150px;
     border-radius: 64px 0px 0px 64px;
     margin: 0 -4px 0;
@@ -876,7 +876,7 @@ footer .second-wave{
         margin: 64px 0 0;
     }
 
-    #projects-button {
+    #portfolio-button {
         width: 250px;
     }
 

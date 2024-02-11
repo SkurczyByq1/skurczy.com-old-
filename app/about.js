@@ -33,11 +33,11 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 
     buttons.navbarMenuAbout.addEventListener('click', function() {
-        window.location.href = links.about;
+        window.location.href = '#';
     })
 
     buttons.navbarMenuPortfolio.addEventListener('click', function() {
-        window.location.href = links.projects;
+        window.location.href = links.portfolio;
     })
 
     buttons.githubPin.addEventListener('click', function() {
