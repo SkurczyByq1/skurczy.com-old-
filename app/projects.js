@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
             buttons.navbarMenuPortfolio.style.display = 'flex';
             buttons.navbarMenu.style.background = 'url(images/other/navbar-menu-close.svg)';
         }
-        buttons.navbarMenu.style.animation = 'navbar-menu-icon-rotate 0.3s'
-        navbarMenuCard.style.animation = 'navbar-menu-card-slide-in 0.3s';
+        buttons.navbarMenu.style.animation = 'icon-rotate 0.3s'
+        navbarMenuCard.style.animation = 'slide-in 0.3s';
     })
     
     buttons.skurczycom.addEventListener('click', function() {

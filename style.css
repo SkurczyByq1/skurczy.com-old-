@@ -713,9 +713,9 @@ footer .second-wave{
 }
 
 .card:hover {
-    animation: red-glow 1s ease-in-out infinite alternate;
-    -moz-animation: red-glow 1s ease-in-out infinite alternate;
-    -webkit-animation: red-glow 1s ease-in-out infinite alternate;
+    animation: box-red-glow 1s ease-in-out infinite alternate;
+    -moz-animation: box-red-glow 1s ease-in-out infinite alternate;
+    -webkit-animation: box-red-glow 1s ease-in-out infinite alternate;
     transform: translateY(-20px);
     cursor: pointer;
 }
@@ -809,6 +809,8 @@ footer .second-wave{
 
 @media screen and (max-width: 1089px) {
 
+    /* global */
+
     h1 {
         font-size: 5.5em;
     }
@@ -818,8 +820,8 @@ footer .second-wave{
     }
 
     button {
-        height: 96px;
-        width: 300px;
+        height: 112px;
+        width: 320px;
     }
 
     .underline {
@@ -828,7 +830,7 @@ footer .second-wave{
     }
 
     .button-text {
-        font-size: 2.6em;
+        font-size: 3em;
     }
 
 	.navbar-menu {
@@ -837,6 +839,14 @@ footer .second-wave{
 
     #navbar-logo h1 {
         font-size: 6.5em;
+    }
+
+    footer h1 {
+        font-size: 6.5em;
+    }
+
+    footer span {
+        font-size: 0.3em;
     }
 
     
@@ -888,8 +898,9 @@ footer .second-wave{
     }
 
     .github-button-icon {
-        width: 48px;
-        height: 48px;
+        width: 64px;
+        height: 63px;
+        margin: 0 8px -13px;
     }
 
     .discord-section {
@@ -906,8 +917,8 @@ footer .second-wave{
     }
 
     .discord-button-icon {
-        width: 52px;
-        height: 37.5px;
+        width: 64px;
+        height: 46.5px;
     }
 
     section img {
@@ -1084,7 +1095,7 @@ footer .second-wave{
     }
 }
 
-@-webkit-keyframes red-glow {
+@-webkit-keyframes box-red-glow {
     from {
         box-shadow: 0 0 60px #FF0000;
     }
@@ -1111,7 +1122,7 @@ footer .second-wave{
     }
 }
 
-@-webkit-keyframes navbar-menu-icon-rotate {
+@-webkit-keyframes icon-rotate {
     0% {
         rotate: 0deg;
     }
@@ -1123,7 +1134,7 @@ footer .second-wave{
     }
 }
 
-@-webkit-keyframes navbar-menu-card-slide-in {
+@-webkit-keyframes slide-in {
     0% {
         transform: none;
         display: none;
