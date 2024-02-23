@@ -172,7 +172,7 @@ button:hover p {
 /*navbar*/
 
 .navbar {
-    height: 9.948vh;
+    height: 96px;
     width: 100%;
     position: sticky;
     top: 0;
@@ -181,7 +181,7 @@ button:hover p {
 }
 
 .navbar-container {
-    height: 9.948vh;
+    height: 96px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -233,6 +233,7 @@ button:hover p {
     top: 5.078vh;
     right: -356px;
     width: 16.771vw;
+    min-width: 230px;
     background: linear-gradient(-45deg, rgba(34, 39, 46, 0.5), rgba(34, 39, 46, 0.85));
     padding: 0 16px 0 16px;
     transition: 0.3s;
@@ -243,6 +244,7 @@ button:hover p {
 
 #navbar-menu-card button {
     width: 100%;
+    min-width: 200px;
     background: rgba(125, 125, 125, 0.2);
     box-shadow: none;
     margin: 24px 0 0;
@@ -666,7 +668,7 @@ footer .second-wave{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 16.891vh;
+    height: 17.2vh;
 }
 
 .projects-title h1 {
@@ -804,11 +806,9 @@ footer .second-wave{
 }
 
 
-
 /* mobile devices */
 
-@media screen and (max-width: 1089px) {
-
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1023px), (width: 768px){
     /* global */
 
     h1 {
@@ -835,6 +835,14 @@ footer .second-wave{
 
 	.navbar-menu {
         display: none;
+    }
+
+    .navbar {
+        height: 9.948vh;
+    }
+
+    .navbar-container {
+        height: 9.948vh;
     }
 
     #navbar-logo h1 {
@@ -1071,6 +1079,112 @@ footer .second-wave{
         align-items: center;
         text-align: center;
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1089px), (-webkit-min-device-pixel-ratio: 1.5) {
+    .projects-section {
+        flex-direction: column;
+    }
+    .projects-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .github-section {
+        height: 50vh;
+    }
+    .github-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .discord-section {
+        height: 50vh;
+    }
+    .discord-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    section img {
+        display: none;
+    }
+    /* about page */
+    .about {
+        flex-direction: column;
+    }
+    .about img {
+        display: block;
+        margin: 0 0 48px;
+    }
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .social-media-pins {
+        display: flex;
+        justify-content: center;
+    }
+    /* portfolio */
+    .websites-cards {
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        width: 230px;
+        height: 330px;
+        margin: 64px 32px 0;
+    }
+    .card img {
+        display: block;
+        height: 200px;
+        width: 200px;
+    }
+    .card h2 {
+        font-size: 1.875em;
+    }
+    .projects-title h1 {
+        font-size: 3em;
+    }
+    /* projects pages */
+    .project-info {
+        flex-direction: column;
+        height: 100vh;
+    }
+    .project-info img {
+        display: flex;
+        width: 390px;
+        height: 219.375px;
+        margin: 32px 0px 32px;
+    }
+    .project-info-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 730px) {
+        .navbar-menu {
+            display: none;
+        }
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio: 1.5) {
+        .navbar-menu {
+            display: none;
+        }
     }
 }
 
