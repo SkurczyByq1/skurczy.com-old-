@@ -808,7 +808,7 @@ footer .second-wave{
 
 /* mobile devices */
 
-@media screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1023px), (width: 768px){
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1023px), (width: 768px) {
     /* global */
 
     h1 {
@@ -1000,27 +1000,27 @@ footer .second-wave{
     }
 
     .card {
-        width: 345.6px;
-        height: 512px;
+        width: 345.6px !important;
+        height: 512px !important;
         margin: 64px 32px 0;
     }
 
     .card img {
-        display: block;
-        height: 325.6px;
-        width: 325.6px;
+        display: block !important;
+        height: 325.6px !important;
+        width: 325.6px !important;
     }
 
     .card h2 {
-        font-size: 3em;
+        font-size: 3em !important;
     }
 
     .card p {
-        font-size: 2em;
+        font-size: 2em !important;
     }
 
     .projects-title h1 {
-        font-size: 5.5em;
+        font-size: 5.5em !important;
     }
 
 
@@ -1055,22 +1055,18 @@ footer .second-wave{
 
     .project-info {
         flex-direction: column;
-        height: 75.052vh;
-    }
-
-    .mobile-image {
-        display: block;
-    }
-
-    .desktop-image {
-        display: none !important;
+        height: 75.052vh !important;
     }
 
     .project-info img {
         display: block;
-        width: 747px;
-        height: 420px;
-        margin: 32px 0px 32px;
+        width: 747px !important;
+        height: 420px !important;
+        margin: 64px 0 0 !important;
+    }
+
+    .desktop-image {
+        display: none !important;
     }
 
     .project-info-content {
@@ -1082,7 +1078,17 @@ footer .second-wave{
     }
 }
 
-@media screen and (max-width: 1089px), (-webkit-min-device-pixel-ratio: 1.5) {
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) {
+    .navbar-menu {
+        display: none;
+    }
+}
+
+
+
+/* reduced browser window */
+
+@media screen and (max-width: 1150px), (-webkit-min-device-pixel-ratio: 1.5) {
     .projects-section {
         flex-direction: column;
     }
@@ -1116,7 +1122,10 @@ footer .second-wave{
     section img {
         display: none;
     }
+
+
     /* about page */
+
     .about {
         flex-direction: column;
     }
@@ -1135,13 +1144,17 @@ footer .second-wave{
         display: flex;
         justify-content: center;
     }
+
+
     /* portfolio */
+
     .websites-cards {
         justify-content: center;
         align-items: center;
     }
     .card {
         width: 230px;
+        min-width: 230px;
         height: 330px;
         margin: 64px 32px 0;
     }
@@ -1156,7 +1169,10 @@ footer .second-wave{
     .projects-title h1 {
         font-size: 3em;
     }
+
+
     /* projects pages */
+
     .project-info {
         flex-direction: column;
         height: 100vh;
@@ -1175,15 +1191,18 @@ footer .second-wave{
         flex-direction: column;
     }
 
-    @media screen and (max-width: 730px) {
-        .navbar-menu {
-            display: none;
-        }
+    .desktop-image {
+        display: none !important;
     }
 
-    @media screen and (-webkit-min-device-pixel-ratio: 1.5) {
-        .navbar-menu {
-            display: none;
+    @media screen and (max-width: 600px){
+        #navbar-logo {
+            position: absolute;
+            left: 64px;
+        }
+
+        .card {
+            margin: 64px 8px 0;
         }
     }
 }
