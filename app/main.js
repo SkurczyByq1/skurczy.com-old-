@@ -27,6 +27,6 @@ export const buttons = {
 }
 
 export const version = {
-    number: '1.1.4',
-    date: '24th February 2024'
+    number: '1.1.5',
+    date: '9th October 2024'
 }
